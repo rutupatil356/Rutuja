@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="5.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scale=no">
+    <title>Document</title>
+    <style>*{margin: 0;padding: 0;box-sizing: border-box;}
+        .container{
+            display: flex;justify-content: center;align-items: center;min-height: 300px;
+            background-image: url("hd4.jpg");
+            width: 100%;background-size: cover;
+        }
+        .box{position: relative;width: 200px;height: 100px;transform-style: preserve-3d;
+        animation: animate 60s linear infinite;
+            }
+            @keyframes animate{
+        
+            0%{transform:perspective(1000px)rotateY(0deg);
+        }
+        100%{transform:perspective(1000px)rotateY(360deg);
+        }
+        
+            }
+           
+        
+        .box span{position: absolute;top: 0;left:0;width: 100%;height: 100px;transform-origin: center;transform-style: preserve-3d;
+        transform:rotateY(calc(var(--i)* 45deg)) translateZ(400px);color:white;border: 1px solid #000;box-shadow: 0px 0px 20px 0px black;
+        }
+         .box span img{position: absolute;top: 0;left: 0;width: 100%;height:100px;object-fit: cover}
+         .box:hover span img{animation-play-state: paused;cursor: pointer}
+        .second-box{width: 100%;height:auto;padding:20px;background-image: url("65.jpg");
+            background-size: cover;}
+        
+        .third-box{width: 100%;height: 250px;box-shadow: 0px 0px 20px 0px black;background-color: rgba(255, 255, 255,.6);
+        
+        padding:20px;text-align: center;overflow:auto}
+        </style>
+    
+</head>
+<body><div class="container">
+    <div class="box">
+        
+       <span style="--i:1;"> <img  src="C:\project1\lonavala.jpeg"></span>
+       <span style="--i:2;"> <img src="C:\project1\lonavala.jpeg"></span>
+       <span style="--i:3;"> <img src="C:\project1\lonavala.jpeg"></span>
+       <span style="--i:4;"> <img src="C:\project1\lonavala.jpeg"></span>
+       <span style="--i:5;"> <img src="C:\project1\lonavala.jpeg"></span>
+       <span style="--i:6;"> <img src="C:\project1\lonavala.jpeg"></span>
+       <span style="--i:7;"> <img src="C:\project1\lonavala.jpeg"></span>
+       <span style="--i:8;"> <img src="C:\project1\lonavala.jpeg"></span>
+       <span style="--i:9;"> <img src="C:\project1\lonavala.jpeg"></span>
+    
+    </div>
+</div>
+<div class="second-box">
+    <div class="third-box"><h2>Lonavala</h2>
+        <p>
+            At a distance of 67 km from Pune, 95 km from Mumbai and 282 km from Aurangabad, Lonavala is a beautiful hill station in Pune district of Maharashtra. It lies at an altitude of 622 m in the Sahyadri Ranges which separate the Deccan Plateau and the Konkan Coast. Lonavala is among the top hill stations in Maharashtra and also one of the famous Tourist places in Maharashtra. This is also among the best tourist places to visit near Pune & Mumbai.
+
+            Lohagad Fort, Karla Caves and Rajmachi Point are some of the best places to include in Lonavala packages. Lonavala and Khandala are twin hill stations near Pune to Mumbai hightway and are very popular monsoon getaways in India. The hill station is spread over an area of 38 square km. The name of the city is derived from the Sanskrit word 'Lonavali', which refers to a 'group of caves'. The name was given to the place due to the presence of many caves in and around the city.
+            
+            Lord Elphinstone, who was the Governor of the Bombay Presidency, developed Lonavala along with Khandala in 1871. Present day Lonavala was a part of the Yadava Dynasty, which was taken over by the Mughals and then Marathas ruled before it eventually fell into the hands of the British. The forts in the region and the Malva warriors played an important role in the history of the Maratha and Peshwa empires.
+            
+            Lonavala has several tourist places in the form of caves, lakes, forts and waterfalls. Some of the best places to visit in Lonavala are Lohagad Fort, Rajmachi Point, Karla Caves, Valvan Dam, Lonavala Lake, Tiger's Leap, Bhaja Caves, Rajmachi Fort, Bhushi Dam, Korigad Fort, Kune Waterfalls, Tikona Fort, Visapur Fort, Bedsa Caves and Tung Fort.
+            
+            Pune International Airport is the nearest airport, which is about 69 km from Lonavala and has daily flights from Mumbai, Bangalore, Hyderabad, Chennai, Kochi, Delhi, Kolkata and Goa. Lonavala has its own railway stations and is well connected by train with Goa, Delhi, Mumbai, Pune, Kochi, Bangalore, Ahmedabad, Hyderabad and many other major cities in India. Lonavala is well connected by bus with Mumbai, Pune, Satara, Goa, Shirdi, Ahmedabad, Bangalore, Jodhpur, Rajkot and Mangalore.
+            
+            The best time to visit Lonavala and Khandala is during the monsoon, between July - September, when the scenic spots become lush green and the waterfalls are in full flow.
+            
+            
+        
+    </p>
+    </div>
+
+
+</div>
+</body>
+</html>

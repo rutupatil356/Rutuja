@@ -1,0 +1,126 @@
+/*      header section of   */
+.heder{ width:100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    border:2px solid rgba(42, 65, 42,0);
+    margin-bottom:10px;
+    background-image: url("C:\project1\mumbai-skyline-landscape-view-city-260nw-2264292589.webp");
+    background-size: cover;
+  }
+  
+  .heder ul{
+           float: right;padding-top: 2px;margin: 20px;
+   
+  }
+  .heder ul li{border: 1px solid  rgb(40, 113, 192);
+    padding: 8px;
+              background-color: rgba(168, 189, 211,.5);
+              display: inline-block;
+              border-radius: 10px 1px;
+              margin-right: 20px;
+              
+              }
+.heder ul li a{text-decoration: none;
+             font-size: 18px;
+            color: #00fff0;padding: 10px;
+          }
+            .heder ul li:hover {box-shadow: -6px -6px 5px gold , 7px 7px 20px greenyellow; text-shadow: 4px 4px 7px #00fff0,-4px -4px 7px #00fff0;
+       background-color: rgba(10, 10, 10,.5); }
+
+       .brit{box-shadow: -6px -6px 5px gold , 7px 7px 20px greenyellow; text-shadow: 4px 4px 7px #00fff0,-4px -4px 7px #00fff0;
+        background-color: rgba(10, 10, 10,.5);}
+/*  End of   header section of      */
+
+
+/* -------------------------- Nave bar --------------------*/
+@media(min-width:700px){#so,.main{display: none;}}
+@media(max-width:700px){
+body{max-width: 100% !important;
+object-fit: cover;}
+.heder ul{display:none}
+.main{
+list-style: none;
+clear:both;
+
+
+
+padding: 0px;margin:0px;
+}
+.heder{ width:100%;
+    height:85px;
+    position: absolute;
+    top: 0;
+    border:2px solid rgba(42, 65, 42,0);
+    margin-bottom:10px;
+    background-image: url("image3.jpg");
+    background-size: cover;
+  }
+#bar{
+height: 400px;width: 100%;
+background-color: rgba(168, 189, 211,.4);
+position: fixed;
+top:0px;left:0px;
+margin: 0%;
+border-right:1px solid black;
+transform: translateY(-400px);
+transition:transform 250ms ease-in-out;
+z-index: 6;
+}
+.sb{
+width: 22px;height: 22px;position: absolute;z-index: 50;top:45px;
+right:45px;cursor:pointer;;
+}
+#so{display: none;}
+
+#so:checked ~ #bar{transform: translateY(0);}
+.spiner{height: 3.2px;background:black;transition: 0.3s;}
+.spiner.bottem,.spiner.mid{
+margin-top: 3px;
+}
+#so:checked ~ .sb>.spiner.mid{
+opacity: 0;
+}
+#so:checked ~ .sb>.spiner.top{transform:rotate(135deg) ;
+margin-top: 9px;
+
+}
+#so:checked ~ .sb>.spiner.bottem{transform:rotate(-135deg);
+    margin-top:-9px;}
+    
+
+.main>li>a{
+text-decoration: none;
+font-size: 20px;
+color:#00fff0;
+font-size: 30px;
+
+}
+.main>li{padding:10px;
+margin-right: 20px;
+text-align: center;
+
+
+}
+
+.main>li:hover{background-color: rgba(10, 10, 10,.5);
+}
+      .main>li:hover{
+        color:#00fff0;
+        margin-right: 0px;
+        box-shadow: -6px -6px 5px gold , 7px 7px 20px greenyellow;
+        text-shadow: 4px 4px 7px #00fff0, -4px -4px 7px #00fff0;
+      
+    }
+
+}
+
+/* -------------------------- END Nave bar --------------------*/
+body{background-image: url("abbby.jpg");background-size: cover;text-align: center;}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.boxa{width: 400px;height: 450px;box-shadow: 1px 2px 20px black;margin: 20px;padding: 10px;margin-top: 120px;
+padding: 20px;}
+.bos{width: 100%;height: 100%;display: flex;justify-content: center;}
+#so{color: white;background-color: rgba(0, 0, 0,.6);}
+.foot{width: 100%;height: 50px;background-color: rgba(0, 0, 0,.5);position: absolute;bottom: 0;}
+.foot span{padding: 20px;}

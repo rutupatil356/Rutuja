@@ -1,0 +1,174 @@
+*{margin: 0;
+    padding: 0%;
+   box-sizing: border-box;
+   
+  list-style: none;}
+  
+  body{background-color: skyblue;}
+  
+  .parestback{width: 100%;height:100vh;}
+  
+  .backround{
+      position: fixed;
+      right: 0;top:0;bottom: 0;
+      min-width: 100%;
+      
+      width: auto;height: auto;
+      z-index: -9999;
+  }
+  #so{display:none}
+  /*      header section of      */
+  .heder{ width:100%;
+          height: auto;
+          position: fixed;
+          top: 0;
+          border:2px solid rgba(42, 65, 42,0);
+          margin-bottom:10px;
+        }
+  
+        .heder ul{
+                 float: right;padding-top: 2px;margin: 20px;
+         
+        }
+        .heder ul li{border: 1px solid  rgba(168, 189, 211,.8);
+          padding: 8px;
+                    background-color: rgba(168, 189, 211,.4);
+                    display: inline-block;
+                    border-radius: 10px 1px;
+                    margin-right: 20px;
+                    
+                    }
+  .heder ul li a{text-decoration: none;
+                   font-size: 18px;
+                  color: #00fff0;padding: 10px;
+                }
+                  .heder ul li:hover {box-shadow: -6px -6px 5px gold , 7px 7px 20px greenyellow; text-shadow: 4px 4px 7px #00fff0,-4px -4px 7px #00fff0;
+             background-color: rgba(10, 10, 10,.5); }
+  
+  .brit{box-shadow: -6px -6px 5px gold , 7px 7px 20px greenyellow; text-shadow: 4px 4px 7px #00fff0;
+    background-color: rgba(10, 10, 10,.5); }
+  
+  
+  
+  
+  
+  /*  End of   header section of      */
+  .zafeer{width:100%;height: auto;border:1px solid rgba(66, 64, 59,0);margin-top:40px;margin-bottom: 10px;text-align: center; }
+  
+       .name {font-size: 27px;text-align: center;margin-top: 150px;text-shadow: 4px 4px 6px gray ;padding:0px;
+        color:rebeccapurple;font-family:cursive;border:2px solid rgba(165, 165, 92,0)}
+  
+      /*   --------foter -------------*/
+  /*.footer{
+    width: 100%;height: 130px;background-color: rgba(10, 10, 10,.5);margin-top: 20px;
+  
+    
+  }
+  .sec{
+    width: 100%;height: auto;display: flex;flex-direction: row;justify-content: space-around;flex-flow: wrap;
+  margin-top:0px;}
+  .Boot{width: 300px;height: 150px;margin-top:0px;font-size:19px; color: white;
+    text-align: center;object-fit: cover;overflow: hidden;}
+  */
+    footer{float:left;font-family: Arial;background-color: rgba(2, 2, 2,.2);text-align: center;height:auto;
+      width: 100%;border:2px solid rgba(170, 81, 81,0);margin-top: 10px;}
+    section{ color: white;display: inline-block;padding:10px;text-align: left;object-fit: cover; }
+    section h2{text-align: center;font-family:cursive}
+    hr{display: none;}
+  
+  
+  
+      /*   -------- End foter -------------*/
+      .child1{height: 200px;width: 300px;border:2px solid black;}
+      .child2{height: 220px;width: 300px;border:2px solid black;}
+      .child3{height: 220px;width: 300px;border:2px solid black;}
+      .child4{height: 220px;width: 300px;border:2px solid black;}
+      
+      #ple{height: 220px;width: 300px;z-index: -1;}
+      
+      .three{height: 20px; width: 300px;background-color: rgba(34, 10, 10,0.8); color: white;position: absolute;bottom: 0;
+        font-size: 22px;padding-bottom:25px;text-align:center;} 
+      .child1,.child2,.child3,.child4 { overflow:hidden; position: relative;object-fit: cover;border-radius: 50px 50px;}
+      .set{text-align: center;}
+      .set3 li{display: inline-block;padding: 20px;text-align: left;}
+      .child1,.child2:hover ,.child3:hover ,.child4:hover {box-shadow: -6px -6px 20px orange , 7px 7px 20px greenyellow;
+      }
+      .set{text-align: center;}
+  
+      /* ---------------meno br mdida cory---------*/
+      @media(min-width:700px){.main{display: none;}}
+  
+  @media(max-width:700px){
+    body{max-width: 100% !important;
+    object-fit: cover;}
+    .heder ul{display:none}
+    .main{
+      list-style: none;
+      clear:both;
+     
+      
+     
+      padding: 0px;margin:0px;
+  }
+  #bar{
+      height: 400px;width: 100%;
+      background-color: rgba(168, 189, 211,.4);
+      position: fixed;
+      top:0px;left:0px;
+      margin: 0%;
+      border-right:1px solid black;
+      transform: translateY(-400px);
+      transition:transform 250ms ease-in-out;
+      z-index: 6;
+  }
+  .sb{
+      width: 22px;height: 22px;position: fixed;z-index: 50;top:22px;
+      left:30px;cursor:pointer;;
+  }
+  #so{display: none;}
+  
+  #so:checked ~ #bar{transform: translateY(0);}
+  .spiner{height: 3px;background:black;transition: 0.3s;}
+  .spiner.bottem,.spiner.mid{
+      margin-top: 3px;
+  }
+  #so:checked ~ .sb>.spiner.mid{
+      opacity: 0;
+  }
+  #so:checked ~ .sb>.spiner.top{transform:rotate(135deg) ;
+      margin-top: 9px;
+  
+  }
+      #so:checked ~ .sb>.spiner.bottem{transform:rotate(-135deg);
+          margin-top:-9px;}
+  
+  
+  
+  .main>li>a{
+      text-decoration: none;
+      font-size: 20px;
+      color:#00fff0;
+      font-size: 30px;
+     
+  }
+  .main>li{padding:10px;
+      margin-right: 20px;
+      text-align: center;
+      
+      
+  }
+  
+  .main>li:hover{background-color: rgba(10, 10, 10,.5);
+  }
+            .main>li:hover{
+              color:#00fff0;
+              margin-right: 0px;
+              box-shadow: -6px -6px 5px gold , 7px 7px 20px greenyellow;
+              text-shadow: 4px 4px 7px #00fff0, -4px -4px 7px #00fff0;
+            
+          }
+  
+  }
+  
+  
+         /* ---------------meno br mdida cory---------*/
